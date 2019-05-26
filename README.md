@@ -85,3 +85,22 @@ module.exports = {
   }
 }
 ```
+
+I have use image prepared by TheCodingMachine to build my image. ``thecodingmachine/nodejs:10``.
+
+#docker compose
+
+```
+front:
+    image: thecodingmachine/nodejs:10
+    command: npm run dev
+    working_dir: /usr/src/app
+    labels:
+      - 'traefik.backend=frontend'
+      - 'traefik.frontend.rule=Host:front.${HOST_URL}'
+      - 'traefik.port=8080'
+    volumes:
+      - ./front:/usr/src/app
+    env_file:
+      - ./.env
+```
