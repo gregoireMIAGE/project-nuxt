@@ -17,7 +17,7 @@
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
     "moment": "^2.24.0",
-    "nuxt": "^2.4.0",
+    "nuxt": "^2.15.8",
     "serve-static": "^1.14.1"
   },
   "devDependencies": {
@@ -26,6 +26,6 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
-    "vue-jest": "^3.0.3"
+    "vue-jest": "^4.0.1"
   }
 }
